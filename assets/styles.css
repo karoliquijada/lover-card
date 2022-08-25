@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #3f3f3f;
+    --borders:#B58EEE;
+    --text-2:#825bbe;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto;
+    height: 100vh;
+    background-color: papayawhip;
+    text-align: center;
+}
+
+.card {
+    width: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* ------------------ Card Background ------------- */
+
+.card .card-background {
+    position: relative;
+    top:-100px;
+}
+
+.card .card-background img {
+    width: 110%;
+    height: auto;
+}
+
+
+/* ------------------ Card Profile Picture ------------- */
+.card .picture {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: #fff solid 5px;
+    margin: -200px auto 0 auto;
+    z-index: 20;
+}
+
+.card .picture img {
+    width: 100%;
+    height: auto;
+}
+/* ------------------ Card Body-------------*/
+
+.content {
+    padding: 10px;
+    color: var(--text);
+}
+.card .title {
+    font-weight: 700;
+    margin: 20px;
+}
+
+.description {
+    font-style: italic;
+    padding-bottom: 7px;
+}
+
+p span {
+    font-weight: 700;
+}
+
+.card .card-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: 2px solid var(--borders);
+    background-color: #B58EEE;
+}
+
+
+.card .card-buttons .button {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+
+
+/* ------------------ Footer ------------- */
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+footer p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color:var(--text);
+}
+
+/*------------------ Media queries ------------------ */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 350px;
+    }
+
+}
